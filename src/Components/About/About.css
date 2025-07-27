@@ -110,20 +110,20 @@
     background: rgb(220, 219, 219);
 }
 
-@media (max-width:580px) {
+@media (max-width:767px) {
     .title{
-        width: 500px;
+        width: 420px;
         font-size: 3rem;
     }
     .about p{
-        width: 500px;
+        width: 420px;
     }
     .cards-container .card{
         min-width: 280px;
         min-height: 280px;
     }
     .about-bottom{
-        width: 500px;
+        width: 420px;
         gap: 10px;
     }
 }
