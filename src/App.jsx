@@ -4,7 +4,7 @@ import MainPage from './Pages/MainPage';
 function App() {
   return (
     <>
-    <BrowserRouter>
+    <BrowserRouter basename="/QuizzyMind-/">
       <Routes>
         <Route path='/' element={<MainPage/>}/>
       </Routes>
