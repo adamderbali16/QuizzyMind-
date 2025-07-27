@@ -1,0 +1,137 @@
+.hero{
+    padding: 50px 150px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.brain{
+    background: linear-gradient(270deg, #ff6a00, #ee0979, #00c9ff);
+    padding: 20px;
+    border-radius: 50%;
+    animation: opacity_animation 3s ease infinite;
+}
+
+.hero-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.title {
+    font-size: 7rem;
+    margin: 30px 0px;
+    background: linear-gradient(270deg, #ff6a00, #ee0979, #00c9ff);
+    background-size: 600% 600%;
+    animation: gradientMove 5s ease infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+@keyframes opacity_animation {
+  0% { opacity: 0.5;}
+  50% { opacity: 1; }
+  100% { opacity: 0.5; }
+}
+
+
+.hero-container p{
+    text-align: center;
+    color: gray;
+    font-size: 28px;
+    width: 65%;
+    margin-bottom: 50px;
+}
+.hero-container .hero-buttons{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+.hero-container .hero-buttons button{
+    padding: 15px 50px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+.getstarted-button{
+    color: white;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background: linear-gradient(270deg, #ff6a00, #ee0979, #00c9ff);
+}
+.getstarted-button:hover{
+    opacity: 0.8;
+    
+}
+.arrowButton{
+    transition: 0.3s;
+}
+.getstarted-button:hover .arrowButton{
+    transform: translateX(10px);
+}
+.signin-button:hover{
+    opacity: 0.8;
+}
+.hero-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 120px;
+}
+.hero-bottom .card{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+.hero-bottom .card h2{
+    font-size: 38px;
+    
+}
+.hero-bottom .card p{
+    font-size: 22px;
+    width: 100%;
+}
+.text1{
+    background: linear-gradient(270deg, #ff6a00, #ff3300, #ff1900);
+    background-size: 600% 600%;
+    animation: gradientMove 5s ease infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.text2{
+    background: linear-gradient(270deg, #ee0979, #ee09ea, #ee0979);
+    background-size: 600% 600%;
+    animation: gradientMove 5s ease infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.text3{
+    background: linear-gradient(270deg, #00c9ff, #0044ff, #00c9ff);
+    background-size: 600% 600%;
+    animation: gradientMove 5s ease infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+@media(max-width:580px) {
+    .hero-buttons{
+        flex-direction: column;
+    }
+    .hero-container p{
+        width: 100%;
+    }
+    .hero-bottom{
+        gap: 50px;
+    }
+}

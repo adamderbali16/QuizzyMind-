@@ -1,0 +1,129 @@
+.about{
+    padding: 50px 150px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.title {
+    font-size: 4rem;
+    margin: 30px 0px;
+    background: linear-gradient(270deg, #ff6a00, #ee0979, #00c9ff);
+    background-size: 600% 600%;
+    animation: gradientMove 5s ease infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.about p{
+    text-align: center;
+    color: gray;
+    font-size: 28px;
+    width: 65%;
+    margin-bottom: 50px;
+}
+.cards-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.cards-container .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    border: 1px solid;
+    padding: 20px 0;
+    border-radius: 8px;
+    width: 320px;
+    height: 320px;
+}
+
+.icon{
+    background: linear-gradient(270deg, #ff6a00, #ee0979, #00c9ff);
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.2s ease-in-out;
+}
+.icon:hover{
+    transform: scale(1.05);
+}
+.cards-container .card h3{
+    font-size: 24px;
+    color: white;
+}
+.cards-container .card p{
+    color: gray;
+    font-size: 20px;
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+
+.about-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 65px;
+    background: linear-gradient(270deg, #00ffae, #00c9ff);
+    width: 80%;
+    padding: 50px 50px;
+    border: none;
+    border-radius: 15px;
+}
+.about-bottom h2{
+    font-size: 38px;
+    font-weight: 600;
+}
+.about-bottom p{
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.about-bottom button{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 50px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    color: green;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.about-bottom button:hover{
+    background: rgb(220, 219, 219);
+}
+
+@media (max-width:580px) {
+    .title{
+        width: 500px;
+        font-size: 3rem;
+    }
+    .about p{
+        width: 500px;
+    }
+    .cards-container .card{
+        min-width: 280px;
+        min-height: 280px;
+    }
+    .about-bottom{
+        width: 500px;
+        gap: 10px;
+    }
+}
