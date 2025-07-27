@@ -1,18 +1,12 @@
-
-import { BrowserRouter ,Routes ,Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import MainPage from './Pages/MainPage';
+
 function App() {
   return (
-    <>
-    <BrowserRouter basename="/QuizzyMind-">
+    <HashRouter>
       <Routes>
-        <Route path='/' element={<MainPage/>}/>
+        <Route path="/" element={<MainPage />} />
       </Routes>
-    </BrowserRouter>
-      
-        
-    </>
-  )
+    </HashRouter>
+  );
 }
-
-export default App
