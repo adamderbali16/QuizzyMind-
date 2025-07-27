@@ -116,14 +116,18 @@
         font-size: 3rem;
     }
     .about p{
-        width: 420px;
+        width: 320px;
     }
     .cards-container .card{
         min-width: 280px;
         min-height: 280px;
     }
     .about-bottom{
-        width: 420px;
+        width: 320px;
         gap: 10px;
+    }
+    .about-bottom button{
+        font-size: 16px;
+        padding: 6px 41px;
     }
 }

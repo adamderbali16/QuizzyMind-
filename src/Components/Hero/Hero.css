@@ -129,7 +129,7 @@
         flex-direction: column;
     }
     .hero-container p{
-        width: 100%;
+        width: 320px;
     }
     .hero-bottom{
         gap: 15px;
