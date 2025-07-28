@@ -1,6 +1,7 @@
 import React from 'react'
 import {Brain, MoveRight} from 'lucide-react'
 import './Hero.css'
+import { Link } from 'react-router-dom'
 
 const Hero = () => {
   return (
@@ -11,7 +12,8 @@ const Hero = () => {
             <p>Test your knowledge, challenge your mind, and ace every quiz with our interactive learning platform</p>
             <div className='hero-buttons'>
                 <button className='getstarted-button'>Get started <MoveRight className='arrowButton'/> </button>
-                <button className='signin-button'>Sign In</button>
+                <Link to="/LoginPage"><button className='signin-button'>Sign In</button></Link>
+                
             </div>
             <div className="hero-bottom">
                 <div className='card'>

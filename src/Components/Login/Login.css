@@ -1,0 +1,95 @@
+.login{
+    padding: 50px 150px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+}
+.login h2{
+    font-size: 38px;
+}
+.login p{
+    font-size: 22px;
+    color: gray;
+    margin-bottom: 35px;
+}
+
+.login-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 35px 35px;
+}
+.login-box h3{
+    font-size: 26px;
+}
+.login-box p{
+    font-size: 18px;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.form-group label{
+    display: flex;
+    align-items: start;
+    font-weight: 600;
+}
+.form-group input{
+    width: 350px;
+    height: 35px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+.login-box Button{
+    width: 350px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    background: linear-gradient(270deg, #ff6a00, #ee0979, #00c9ff);
+}
+.login-box p span{
+    color: green;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.login-box p span:hover{
+    color: rgb(0, 162, 255);
+}
+
+
+@media (max-width:760px) {
+    .login-box{
+        padding: 10px 20px;
+    }
+    .login p{
+        font-size: 18px;
+        width: 220px;
+    }
+    .login h2{
+        font-size: 30px;
+    }
+    .login-box Button{
+        width: 280px;
+        
+    }
+    .form-group input{
+        width: 280px;
+    }
+    .login-box p{
+        font-size: 16px;
+    }
+}
